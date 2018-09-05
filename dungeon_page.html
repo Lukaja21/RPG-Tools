@@ -1,17 +1,18 @@
 <!DOCTYPE html>
-<html lang="en-US">
-	<head>
-		<title>RPG Tools</title>
+<html>
+<head>
+	<title>RPG Tools</title>
 
-		<!-- Bootstrap -->
-		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
-		<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
-		<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+	<!-- Bootstrap -->
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
 
-		<link rel="stylesheet" href="styles/main.css">
-	</head>
-	<body>
+	<script src="scripts/dungeon.js"></script>
+	<link rel="stylesheet" href="styles/main.css">
+</head>
+<body>
 	<div class="header">
 		<a href="index.html"><h1>RPG Tools</h1></a>
 	</div>
@@ -44,13 +45,10 @@
 			</ul>
 		</div>
 	</nav>
-	<div class="Other"style="height:500px;width: 100%;background-color: midnightblue;padding: 0px">
-		<div class="left">
-			<img src="images/Fire_breathing_dragon_by_sandara-d56vmyu.jpg" alt="Italian Trulli" style="width:450px;height:500px;padding: 0px">
-		</div>
-		<div class="right">
-			<p style="color: white;padding: 0px">
-				This is a set of tools made by Lukaja21 which can be used in almost any type of RPG game. The generators inclue a shop generator, loot generator and a few more. This site also includes a character sheet edtor, a item dictionary and a battle simulator.
+	<div>
+		<div class="ml-5" style="color: white;">
+    	    <button onclick="dungeon_generator()">Click me</button>
+			<p style="color: white" id="dungeon">
 			</p>
 		</div>
 	</div>
