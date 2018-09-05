@@ -25,7 +25,7 @@ function processCharacter(files) {
     catch (e) {
         console.log(e);
     }
-    s}
+    }
 }
 function saveCharacter() {
     var data = {"name":document.getElementsByName("name")[0].value, "xp":document.getElementsByName("xp")[0].value, "lvl":document.getElementsByName("lvl")[0].value, "coins":document.getElementsByName("coins")[0].value, "right":document.getElementsByName("right")[0].value, "left":document.getElementsByName("left")[0].value, "helmet":document.getElementsByName("helmet")[0].value, "chest":document.getElementsByName("chest")[0].value, "legs":document.getElementsByName("legs")[0].value, "footwear":document.getElementsByName("footwear")[0].value, "strength":document.getElementsByName("strength")[0].value, "defense":document.getElementsByName("defense")[0].value, "speed":document.getElementsByName("speed")[0].value, "mana":document.getElementsByName("mana")[0].value, "hp":document.getElementsByName("hp")[0].value, "dexterity":document.getElementsByName("dexterity")[0].value}
