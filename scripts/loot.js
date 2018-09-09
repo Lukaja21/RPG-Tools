@@ -6,7 +6,7 @@ function loot_generator() {
 	var final = []
 	
 	var itemcount = document.getElementById("itemcount").value;
-	var amount = document.getElementById("amount").value;
+	var amount = Number(document.getElementById("amount").value);
 	var bad = $('[value="Bad"]').prop('checked');
 	var good = $('[value="Good"]').prop('checked');
 	var normal = $('[value="Normal"]').prop('checked');
@@ -23,9 +23,9 @@ function loot_generator() {
 	}
 
 	for (let i = 0; i < itemcount; i++) {
-		var adjusted_quant = Math.floor(Math.random() * 2) + 1;
+		var adjusted_quant = amount + Math.floor(Math.random() * 2);
 		while (adjusted_quant < 1) {
-			var adjusted_quant = Math.floor(Math.random() * 2) + 1;
+			var adjusted_quant = amount + Math.floor(Math.random() * 2);
 		}
 		var adjusted_price = price + Math.floor(Math.random() * 20) - 20;
 		while (adjusted_price < 1) {
@@ -42,4 +42,4 @@ function loot_generator() {
 		final.push(adjusted_quant + ' ' + itemgrade + ' ' + item + ' ' + '-' + ' ' + adjusted_quant*adjusted_price + ' ' + 'Coins')
 	}
 	$("#loot").html(final.join("</br>"));
-	}
+}

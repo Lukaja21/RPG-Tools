@@ -24,11 +24,11 @@
 						Generators
 					</a>
 					<div class="dropdown-menu" aria-labelledby="navbarDropdown">
-						<a class="dropdown-item" href="#">Shop Generator</a>
+						<a class="dropdown-item" href="shop_page.html">Shop Generator</a>
 						<a class="dropdown-item" href="dungeon_page.html">Dungeon Generator</a>
-						<a class="dropdown-item" href="#">Quest Generator</a>
+						<a class="dropdown-item" href="quest_page.html">Quest Generator</a>
 						<a class="dropdown-item" href="npc_page.html">NPC Generator</a>
-						<a class="dropdown-item" href="#">Town Generator</a>
+						<a class="dropdown-item" href="town_page.html">Town Generator</a>
 						<a class="dropdown-item" href="loot_page.html">Loot Generator</a>
 					</div>
 				</li>
@@ -46,17 +46,22 @@
 		</div>
 	</nav>
 	<div>
-		<div class="ml-5" style="color: white;">
-			How many of each?<br>
-    	    <input type="text" id="amount"><br>
-    	    How many total?<br>
-    	    <input type="text" id="itemcount"><br>
-    	    <input type="radio" name="grade" value="Bad" checked> Bad
-    	    <input type="radio" name="grade" value="Normal"> Normal
-    	    <input type="radio" name="grade" value="Good"> Good<br>
-    	    <button onclick="loot_generator()">Click me</button>
-			<p style="color: white" id="loot">
-			</p>
+		<div style="color: white;">
+			<div class="left">
+				<img src="images/emily-lewis-donation-chest-resized-wateramark.jpg" alt="Italian Trulli" style="width:450px;height:100%;padding: 0px"><br>
+			</div>
+			<div class="right">
+				How many of each?<br>
+    	    	<input type="text" id="amount"><br>
+    	    	How many total?<br>
+    	    	<input type="text" id="itemcount"><br>
+    	    	<input type="radio" name="grade" value="Bad" checked> Bad
+    	    	<input type="radio" name="grade" value="Normal"> Normal
+    	    	<input type="radio" name="grade" value="Good"> Good<br>
+    	    	<button onclick="loot_generator()">Click me</button>
+				<p style="color: white" id="loot">
+				</p>
+			</div>
 		</div>
 	</div>
 </body>

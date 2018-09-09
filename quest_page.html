@@ -9,8 +9,8 @@
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
 	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
 
-	<script src="scripts/character.js"></script>
-	<link rel="stylesheet" type="text/css" href="styles/main.css">
+	<script src="scripts/quest.js"></script>
+	<link rel="stylesheet" href="styles/main.css">
 </head>
 <body>
 	<div class="header">
@@ -37,7 +37,7 @@
 						Other Tools
 					</a>
 					<div class="dropdown-menu" aria-labelledby="navbarDropdown">
-						<a class="dropdown-item" href="#">Character Editor</a>
+						<a class="dropdown-item" href="character_page.html">Character Editor</a>
 						<a class="dropdown-item" href="#">Item Search</a>
 						<a class="dropdown-item" href="#">Battle Simulator</a>
 					</div>
@@ -47,42 +47,11 @@
 	</nav>
 	<div>
 		<div class="ml-5" style="color: white;">
-			<form id="characterform">
-            <input type="file" id="character" multiple onchange="processCharacter(this.files)"><br>
-            Name:
-            <input type="text" name="name"><br>
-            XP:
-            <input type="text" name="xp"><br>
-            Lvl:
-            <input type="text" name="lvl"><br>
-            Coins:
-            <input type="text" name="coins"><br>
-            Right Hand:
-            <input type="text" name="right"><br>
-            Left Hand:
-            <input type="text" name="left"><br>
-            Helmet:
-            <input type="text" name="helmet"><br>
-            Chestplate:
-            <input type="text" name="chest"><br>
-            Leggings:
-            <input type="text" name="legs"><br>
-            Footwear:
-            <input type="text" name="footwear"><br>
-            Strength:
-            <input type="text" name="strength"><br>
-            Defense:
-            <input type="text" name="defense"><br>
-            Speed:
-            <input type="text" name="speed"><br>
-            Mana:
-            <input type="text" name="mana"><br>
-            Hp:
-            <input type="text" name="hp"><br>
-            Dexterity:
-            <input type="text" name="dexterity"><br>
-            <a href="#" onclick="saveCharacter()" type="button" id="save">Save Character</a>
-        </form>
+    	    <input type="radio" name="grade" value="battle" checked> Battle Quest<br>
+    	    <input type="radio" name="grade" value="gather"> Gather Quest<br>
+    	    <button onclick="quest_generator()">Generate a Quest</button>
+			<p style="color: white" id="quest">
+			</p>
 		</div>
 	</div>
 </body>
