@@ -55,8 +55,21 @@ function town_generator() {
     town.push(part5)
     town.push(part6)
     town.push(part7)
+    
     town.push('Local Tavern:')
     town.push('Name: ' + Tavern[Math.floor(Math.random() * Tavern.length)] + ' ' + Tavern2[Math.floor(Math.random() * Tavern2.length)])
+    town.push('Innkeeper: ')
+    town.push('Name: ' + Names[Math.floor(Math.random() * Names.length)])
+    town.push('Race: ' + Race[Math.floor(Math.random() * Race.length)])
+    town.push('Manners: ' + Manners[Math.floor(Math.random() * Manners.length)])
+    town.push('Intelligence: ' + Intelligence[Math.floor(Math.random() * Intelligence.length)])
+    town.push('Physical Strength: ' + Physical_Strength[Math.floor(Math.random() * Physical_Strength.length)])
+    town.push('Influence: ' + Influence[Math.floor(Math.random() * Influence.length)])
+    town.push('Religious: ' + Religious[Math.floor(Math.random() * Religious.length)])
+    town.push('Social Ranking: ' + Social_Ranking[Math.floor(Math.random() * Social_Ranking.length)])
+    town.push('Wealth: ' + Wealth[Math.floor(Math.random() * Wealth.length)])
+    town.push('Dominant Traits: ' + Traits[Math.floor(Math.random() * Traits.length)] + ', ' + Traits[Math.floor(Math.random() * Traits.length)] + ', ' + Traits[Math.floor(Math.random() * Traits.length)])
+    
     town.push('Patron(s) 1: ' + patrons[Math.floor(Math.random() * patrons.length)])
     town.push('Patron(s) 2: ' + patrons[Math.floor(Math.random() * patrons.length)])
     town.push('Patron(s) 3: ' + patrons[Math.floor(Math.random() * patrons.length)])
@@ -71,6 +84,7 @@ function town_generator() {
     town.push('8. ' + cook[Math.floor(Math.random() * cook.length)] + ' ' + dish[Math.floor(Math.random() * dish.length)])
     town.push('9. ' + cook[Math.floor(Math.random() * cook.length)] + ' ' + dish[Math.floor(Math.random() * dish.length)])
     town.push('10. ' + cook[Math.floor(Math.random() * cook.length)] + ' ' + dish[Math.floor(Math.random() * dish.length)])
+    
     town.push('')
     town.push('Interesting NPCs:')
     var thing = 0;

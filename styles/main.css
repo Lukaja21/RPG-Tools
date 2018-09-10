@@ -24,7 +24,7 @@ font-size: 90px;
 .left {
 	float: left;
    	width: 450px;
-   	height: 500px;
+   	height: 100%;
    	margin-right: 8px;
 }
 
